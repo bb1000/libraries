@@ -5,7 +5,7 @@ index.html: talk.md talk.css
 	vim -s script index.html
 
 test:
-	python -m doctest talk.md
+	python -m doctest talk.md -o ELLIPSIS
 
 pytest:
 	python -m pytest -vx --doctest-glob '*.md'
