@@ -205,6 +205,7 @@ World
 #### cache
 
 * Save results of previous called that can be recalled with same arguments
+
 <!--
 ~~~
 >>> def slow_function(x):
