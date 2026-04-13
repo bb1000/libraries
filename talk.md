@@ -247,12 +247,14 @@ Namespace(name='Alice', age=30)
 
 ~~~
 
+---
+
 ### csv
 ~~~
 >>> import csv
 
 ~~~
-* Handling of tabular data in CSV (comma-separated-values) format 
+* Handling of tabular data in CSV format
 
 prices.csv
 ~~~
@@ -281,3 +283,27 @@ orange,0.7,4
 
 ~~~
 
+---
+
+### pathlib
+~~~
+>>> import pathlib
+
+~~~
+
+* Object-oriented filesystem paths
+* Improvements over `os.path` for path manipulation
+* Platform independent path handling
+
+~~~
+>>> path = pathlib.Path("a") / "b" / "c"
+>>> path
+PosixPath('a/b/c')
+>>> path.exists()
+True
+>>> path.parent
+PosixPath('a/b')
+>>> str(path.name)
+'c'
+
+~~~
